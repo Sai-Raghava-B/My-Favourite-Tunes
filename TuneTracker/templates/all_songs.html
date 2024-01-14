@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}All Songs - Favorite Tunes{% endblock %}
+
+{% block header %}All Songs{% endblock %}
+
+{% block content %}
+    <ul style="list-style-type: none; padding: 0;">
+        {% for song in songs %}
+            <li style="border: 1px solid #ccc; margin: 10px; padding: 10px; background-color: #fff;">
+                <strong>{{ song.title }}</strong> by {{ song.artist.name }}
+                <a href="{% url 'add_favorite_song' song.id %}">Add to Favorites</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

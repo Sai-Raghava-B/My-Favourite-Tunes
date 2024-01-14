@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Add Song - Favorite Tunes{% endblock %}
+
+{% block header %}Add Song{% endblock %}
+
+{% block content %}
+    <form method="post" action="{% url 'add_song' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Song</button>
+    </form>
+{% endblock %}

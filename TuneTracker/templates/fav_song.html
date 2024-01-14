@@ -1,0 +1,18 @@
+
+{% extends 'base.html' %}
+
+{% block title %}Favorite Songs - Favorite Tunes{% endblock %}
+
+{% block header %}Favorite Songs{% endblock %}
+
+{% block content %}
+    <ul style="list-style-type: none; padding: 0;">
+        {% for song in songs %}
+            <li style="border: 1px solid #ccc; margin: 10px; padding: 10px; background-color: #fff;">
+                <strong>{{ song.title }}</strong> by {{ song.artist.name }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+
+

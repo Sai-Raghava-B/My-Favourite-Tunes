@@ -1,0 +1,13 @@
+
+{% extends 'base.html' %}
+
+{% block title %}{{ song.title }} by {{ song.artist.name }} - Favorite Tunes{% endblock %}
+
+{% block header %}{{ song.title }} by {{ song.artist.name }}{% endblock %}
+
+{% block content %}
+    <p><strong>Title:</strong> {{ song.title }}</p>
+    <p><strong>Artist:</strong> {{ song.artist.name }}</p>
+   
+{% endblock %}
+
