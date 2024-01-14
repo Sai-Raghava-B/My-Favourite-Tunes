@@ -3,7 +3,10 @@ and run the server with  this command " python manage.py runserver  "
 
 and login in the end point "/accounts/login/"
 
-and check the end points :-   songs 
+and check the end points :-  
+
+
+                              songs 
                               songs/int:song_id/
                                     to check the songs and the artists for the respective album and with id
                               
@@ -18,4 +21,4 @@ and check the end points :-   songs
                                     to add songs either by id or from the list off all songs where you can add the song to ur favorite collection
 
 
-you can check add more songs by the role of admin.
+you can check by adding  songs by the role of admin i have flushed the database before pushing in github.
