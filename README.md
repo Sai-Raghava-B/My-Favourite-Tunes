@@ -1,4 +1,6 @@
 To login Create a user in the terminal with "python manage.py createsuperuser"
+create 2 users with create super user command , 1 for adding songs and artists from the admin role
+and other to check the urls and views like add favorite songs, count of artists , all songs etc. 
 and run the server with  this command " python manage.py runserver  "
 
 and login in the end point "/accounts/login/"
